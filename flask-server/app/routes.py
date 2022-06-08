@@ -8,8 +8,7 @@ from app.controller import ProductNotesController
 from app.controller import VendorsController
 from flask_cors import CORS, cross_origin
 
-# allow cors policy flask Access-Control-Allow-Origin
-cors = CORS(app , resources={r"/*": {"origins": "*", "allow_headers": "*", "expose_headers": "*"}})
+CORS(app, resources={r"*": {"origins": "*"}})
 
 @app.route("/")
 @cross_origin()
@@ -17,7 +16,6 @@ def index():
     return "Ini Flask"
     
 @app.route("/customers", methods=['GET', 'POST'])
-@cross_origin()
 def customers():
     if request.method == 'GET':
         return CustomerController.index()

@@ -50,8 +50,8 @@ const Customer = () => {
                            <td className="text-center">{data.cust_country}</td>
                            <td className="text-center">{data.cust_zip}</td>
                            <td className="text-center"> 
-                              <Link className="btn btn-success btn-sm" to={`/customers/edit/${data.cust_id}`}><i className="fa-solid fa-pen"></i>&nbsp;Edit</Link>
-                              <Link className="btn btn-danger btn-sm ms-2" to={`/customers/delete/${data.cust_id}`}><i className="fa-solid fa-trash"></i>&nbsp;Delete</Link>
+                              <Link className="btn btn-success btn-sm" to={`/customers/edit/${data.cust_id}`} state={{ id: data.cust_id }}><i className="fa-solid fa-pen"></i>&nbsp;Edit</Link>
+                              <Link className="btn btn-danger btn-sm ms-2" to={`/customers/delete/${data.cust_id}`} state={{ id: data.cust_id }}><i className="fa-solid fa-trash"></i>&nbsp;Delete</Link>
                            </td>
                         </tr>
                      )}

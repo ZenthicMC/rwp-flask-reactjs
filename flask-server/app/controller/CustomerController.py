@@ -75,13 +75,13 @@ def formatOrders(data):
 
 def save():
    try:
-      cust_id=request.form.get('cust_id')
-      cust_name=request.form.get('cust_name')
-      cust_address=request.form.get('cust_address')
-      cust_city=request.form.get('cust_city')
-      cust_zip=request.form.get('cust_zip')
-      cust_country=request.form.get('cust_country')
-      cust_telp=request.form.get('cust_telp')
+      cust_id=request.json['cust_id']
+      cust_name=request.json['cust_name']
+      cust_address=request.json['cust_address']
+      cust_city=request.json['cust_city']
+      cust_zip=request.json['cust_zip']
+      cust_country=request.json['cust_country']
+      cust_telp=request.json['cust_telp']
 
       print(cust_id, cust_name, cust_address, cust_city, cust_zip, cust_country, cust_telp)
 
@@ -97,12 +97,12 @@ def save():
 
 def update(cust_id):
    try:
-      cust_name=request.form.get('cust_name')
-      cust_address=request.form.get('cust_address')
-      cust_city=request.form.get('cust_city')
-      cust_zip=request.form.get('cust_zip')
-      cust_country=request.form.get('cust_country')
-      cust_telp=request.form.get('cust_telp')
+      cust_name=request.json['cust_name']
+      cust_address=request.json['cust_address']
+      cust_city=request.json['cust_city']
+      cust_zip=request.json['cust_zip']
+      cust_country=request.json['cust_country']
+      cust_telp=request.json['cust_telp']
       input = {
          'cust_name':cust_name,
          'cust_address':cust_address,
