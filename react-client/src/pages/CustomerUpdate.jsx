@@ -71,21 +71,21 @@ const CustomerUpdate = () => {
                <div className="row">
                   <div className="col-lg-6 mb-2">
                      <label className="form-label">Telp</label>
-                     <input type="text" className="form-control" value={telp} onChange={(e) => setTelp(e.target.value)} required></input>
+                     <input type="text" className="form-control" onChange={(e) => setTelp(e.target.value)} required></input>
                   </div>
                   <div className="col-lg-6 mb-2">
                      <label className="form-label">City</label>
-                     <input type="text" className="form-control" value={city} onChange={(e) => setCity(e.target.value)} required></input>
+                     <input type="text" className="form-control" onChange={(e) => setCity(e.target.value)} required></input>
                   </div>
                </div>
                <div className="row">
                   <div className="col-lg-6 mb-2">
                      <label className="form-label">Country</label>
-                     <input type="text" className="form-control" value={country} onChange={(e) => setCountry(e.target.value)} required></input>
+                     <input type="text" className="form-control" onChange={(e) => setCountry(e.target.value)} required></input>
                   </div>
                   <div className="col-lg-6 mb-4">
                      <label className="form-label">Zip Code</label>
-                     <input type="text" className="form-control" value={zip} onChange={(e) => setZip(e.target.value)} required></input>
+                     <input type="text" className="form-control" onChange={(e) => setZip(e.target.value)} required></input>
                   </div>
                </div> 
                <button type="submit" className="btn b-primary text-white w-100 mb-3">Update</button>
