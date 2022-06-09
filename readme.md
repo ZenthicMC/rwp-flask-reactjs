@@ -1,6 +1,6 @@
 ## Cara Install
 1. Klik tombol code di pojok kanan atas kemudian download zip
-2. Install libary SweetAlert `npm install --save sweetalert`
+2. Install libary SweetAlert `npm install --save sweetalert2 sweetalert2-react-content`
 3. Copykan Folder virtual env & node modules kalian dari project yang lama ke dalam masing2 folder flask & react
 4. Nyalakan server flask `flask run`
 5. Nyalakan server react `npm start`
