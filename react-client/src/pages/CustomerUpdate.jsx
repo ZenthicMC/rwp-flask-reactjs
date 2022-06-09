@@ -23,7 +23,6 @@ const CustomerUpdate = () => {
    const updateCust = async (e) => {
       e.preventDefault();
       await axios.put(`http://localhost:5000/customers/${id}`, {
-         cust_id: new Date().getTime(),
          cust_name: name,
          cust_address: address,
          cust_telp: telp,
