@@ -83,8 +83,6 @@ def save():
       cust_country=request.json['cust_country']
       cust_telp=request.json['cust_telp']
 
-      print(cust_id, cust_name, cust_address, cust_city, cust_zip, cust_country, cust_telp)
-
       # Tampung pada sebuah variabel
       saveCustomers= Customers(cust_id=cust_id, cust_name=cust_name, cust_address=cust_address,
       cust_city=cust_city, cust_zip=cust_zip, cust_country=cust_country, cust_telp=cust_telp)
